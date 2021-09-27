@@ -3,8 +3,8 @@ const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
     function animOnScroll() {
-        for (let index1 = 0; index1 < animItems.length; index1++) {
-            const animItem = animItems[index1];
+        for (let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
             const animStart = 3;
