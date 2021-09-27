@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'CMU_Typewriter_Text_Regular' ;
+    src: url(../fonts/CMU_Typewriter_Text_Regular/CMU_Typewriter_Text_Regular.ttf) format('truetype'),
+    url(../fonts/CMU_Typewriter_Text_Regular/CMU_Typewriter_Text_Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'IntrospectC' ;
+    src: url(../fonts/IntrospectC/IntrospectC.ttf) format('truetype'),
+    url(../fonts/IntrospectC/IntrospectC.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Vida_Stencil_33_Pro' ;
+    src: url(../fonts/Vida_Stencil_33_Pro/Vida_Stencil_33_Pro.ttf) format('truetype'),
+    url(../fonts/Vida_Stencil_33_Pro/Vida_Stencil_33_Pro.woff) format('woff');
+}
+
+.wrapper_background {
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax {
+    flex: 1 0 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
+}
+
+.parallax_list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.parallax_list li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.parallax_bg {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    background: url(../img/backgraund.svg) 50% 100% / cover no-repeat;
+}
+
+.parallax_rope_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parallax_rope {
+    width: 120%;
+    left: -10%;
+}
+
+.parallax_rope img {
+    width: 100%;
+}
+
+.parallax_rope_1 {
+    margin-top: 155px;
+}
+
+.parallax_rope_2 {
+    margin-top: 155px;
+}
+
+.parallax_rope_3 {
+    margin-top: 25%;
+}
+
+.content {
+    position: relative;
+    top: 50%;
+}
